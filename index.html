@@ -20,9 +20,10 @@
     />
     <link rel="manifest" href="./assets/favicon//site.webmanifest" />
 
-    <!-- css and reset css -->
+    <!-- css and reset css and responsive -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
 
     <!-- font -->
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
@@ -114,7 +115,7 @@
       <div class="container">
         <div class="about-content">
           <h2
-            class="section-title"
+            class="title"
             data-aos="fade-right"
             data-aos-duration="500"
             data-aos-easing="ease-in-sine"
@@ -122,7 +123,7 @@
             About Me
           </h2>
           <p
-            class="about-desc"
+            class="desc"
             data-aos="fade-right"
             data-aos-duration="500"
             data-aos-easing="ease-in-sine"
@@ -165,6 +166,91 @@
             data-aos-easing="ease-out-cubic"
             data-aos-duration="2000"
           />
+        </div>
+      </div>
+    </section>
+
+    <!-- Classes Section -->
+    <section id="classes" class="classes">
+      <div class="container">
+        <h2 class="classes-title title">Lớp học của chúng tôi</h2>
+        <p class="classes-subtitle desc">
+          Chọn lớp học phù hợp với mục tiêu của bạn
+        </p>
+
+        <div class="classes-grid">
+          <div class="class-card">
+            <div class="class-image">
+              <img src="./assets/images/class1.jpg" alt="Yoga" />
+            </div>
+            <div class="class-content">
+              <h3>Yoga & Pilates</h3>
+              <p>Lớp học giúp cải thiện sự dẻo dai và thư giãn tinh thần.</p>
+              <a href="#" class="btn btn-outline">Xem lịch học</a>
+            </div>
+          </div>
+
+          <div class="class-card">
+            <div class="class-image">
+              <img src="./assets/images/class2.jpg" alt="Cardio" />
+            </div>
+            <div class="class-content">
+              <h3>Cardio & HIIT</h3>
+              <p>Đốt cháy mỡ thừa hiệu quả với các bài tập cường độ cao.</p>
+              <a href="#" class="btn btn-outline">Xem lịch học</a>
+            </div>
+          </div>
+
+          <div class="class-card">
+            <div class="class-image">
+              <img src="./assets/images/class3.jpg" alt="Personal Training" />
+            </div>
+            <div class="class-content">
+              <h3>Personal Training</h3>
+              <p>Huấn luyện viên cá nhân sẽ giúp bạn đạt mục tiêu nhanh hơn.</p>
+              <a href="#" class="btn btn-outline">Xem lịch học</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trainer Section -->
+    <section class="trainers" id="trainers">
+      <div class="container">
+        <h2 class="title trainers-title">Personal Trainer</h2>
+        <div class="trainer-photo">
+          <img src="./assets/images/class3.jpg" alt="Trainer" />
+        </div>
+        <div class="trainer-info">
+          <h3>Nguyễn An</h3>
+          <h4>Chuyên gia huấn luyện cá nhân | 3 năm kinh nghiệm</h4>
+          <p>
+            Tôi giúp bạn xây dựng vóc dáng khoẻ mạnh và cải thiện thói quen sống
+            thông qua phương pháp tập luyện khoa học và chế độ ăn tối ưu hóa cho
+            mục tiêu cá nhân.
+          </p>
+
+          <div class="features">
+            <div class="feature">
+              <i class="fas fa-dumbbell"></i>
+              <span>Huấn luyện 1:1</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-utensils"></i>
+              <span>Meal plan cá nhân</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-chart-line"></i>
+              <span>Theo dõi tiến độ</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-heartbeat"></i>
+              <span>Hỗ trợ phục hồi</span>
+            </div>
+          </div>
+
+          <a href="#" class="cta-button">Liên hệ ngay</a>
         </div>
       </div>
     </section>

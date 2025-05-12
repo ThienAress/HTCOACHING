@@ -78,6 +78,7 @@ function animateStats() {
 // Khởi chạy khi trang web tải xong
 document.addEventListener("DOMContentLoaded", animateStats);
 
+// Menu Toggle
 const toggleBtn = document.getElementById("menu-toggle");
 const navbar = document.getElementById("navbar");
 
@@ -93,3 +94,4 @@ document.querySelectorAll(".navbar a").forEach((link) => {
     navbar.classList.remove("active");
   });
 });
+// Menu Toggle

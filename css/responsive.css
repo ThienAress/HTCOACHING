@@ -1,0 +1,192 @@
+/* Tablet: ≤1024px */
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .about .container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .about-stats {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .navbar ul {
+    gap: 15px;
+  }
+}
+/* Tablet: 768px đến 1024px */
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .about .container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .about-stats {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .navbar ul {
+    gap: 15px;
+  }
+}
+
+/* Mobile: ≤768px */
+@media (max-width: 768px) {
+  .header .container {
+    flex-wrap: wrap;
+  }
+
+  .navbar {
+    display: none;
+    width: 100%;
+    background-color: var(--dark-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  .hero {
+    padding: 120px 20px 40px;
+    height: auto;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .about .section-title {
+    font-size: 2rem;
+  }
+
+  .classes-title {
+    font-size: 2rem;
+  }
+
+  .trainers-title {
+    font-size: 2rem;
+  }
+
+  .trainer-section {
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .feature {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .navbar ul li a {
+    font-size: 0.9rem;
+  }
+
+  .navbar ul li {
+    margin-left: 15px;
+  }
+
+  .nav-cta .btn {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile: ≤768px */
+@media (max-width: 768px) {
+  .header .container {
+    flex-wrap: wrap;
+  }
+
+  .navbar {
+    display: none;
+    width: 100%;
+    background-color: var(--dark-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  .hero {
+    padding: 120px 20px 40px;
+    height: auto;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .about .section-title {
+    font-size: 2rem;
+  }
+}
