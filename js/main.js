@@ -95,3 +95,12 @@ document.querySelectorAll(".navbar a").forEach((link) => {
   });
 });
 // Menu Toggle
+
+window.addEventListener("load", () => {
+  window.scrollTo(0, 0);
+});
+
+// Hoặc sử dụng (nếu trên vẫn không hoạt động)
+document.addEventListener("DOMContentLoaded", () => {
+  window.scrollTo(0, 0);
+});
