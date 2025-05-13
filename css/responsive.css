@@ -22,6 +22,16 @@
   .navbar ul {
     gap: 15px;
   }
+
+  .pricing-grid {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .pricing-card {
+    width: 45%;
+  }
 }
 /* Tablet: 768px đến 1024px */
 @media (max-width: 1024px) {
@@ -119,6 +129,70 @@
   .feature {
     flex: 1 1 100%;
   }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+  }
+
+  .pricing-card {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .pricing-header h3 {
+    font-size: 22px;
+  }
+
+  .price span:first-child {
+    font-size: 24px;
+  }
+
+  .pricing-features li {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 13px;
+    padding: 10px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 24px;
+  }
+
+  .pricing-grid {
+    gap: 20px;
+  }
+
+  .pricing-card {
+    padding: 20px;
+  }
+
+  .pricing-header h3 {
+    font-size: 20px;
+  }
+
+  .price span:first-child {
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  .pricing-badge {
+    font-size: 12px;
+    padding: 4px 10px;
+    top: -10px;
+    right: -10px;
+  }
 }
 
 @media (max-width: 1024px) and (min-width: 769px) {
@@ -133,60 +207,5 @@
   .nav-cta .btn {
     padding: 8px 16px;
     font-size: 0.85rem;
-  }
-}
-
-/* Mobile: ≤768px */
-@media (max-width: 768px) {
-  .header .container {
-    flex-wrap: wrap;
-  }
-
-  .navbar {
-    display: none;
-    width: 100%;
-    background-color: var(--dark-color);
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .navbar ul li {
-    margin: 10px 0;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .navbar.active {
-    display: block;
-  }
-
-  .nav-cta {
-    display: none;
-  }
-
-  .hero {
-    padding: 120px 20px 40px;
-    height: auto;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .about .section-title {
-    font-size: 2rem;
   }
 }
