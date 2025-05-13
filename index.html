@@ -360,11 +360,125 @@
         </div>
       </div>
     </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-content">
+          <h2 class="section-title">Liên hệ với chúng tôi</h2>
+          <p>Để lại thông tin, chúng tôi sẽ liên hệ tư vấn miễn phí cho bạn</p>
+
+          <form class="contact-form">
+            <div class="form-group">
+              <input type="text" placeholder="Họ và tên" required />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email" required />
+            </div>
+            <div class="form-group">
+              <input type="tel" placeholder="Số điện thoại" required />
+            </div>
+            <div class="form-group">
+              <select required>
+                <option value="" disabled selected>
+                  Chọn gói tập quan tâm
+                </option>
+                <option value="basic">Gói cơ bản</option>
+                <option value="advanced">Gói nâng cao</option>
+                <option value="vip">Gói VIP</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Gửi thông tin</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>123 Đường ABC, Quận 1, TP.HCM</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone-alt"></i>
+            <p>0901.234.567</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <p>info@elitefitness.com</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-clock"></i>
+            <p>Thứ 2 - Chủ nhật: 6:00 - 22:00</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <img
+              src="images/logo.png"
+              alt="Elite Fitness"
+              class="footer-logo"
+            />
+            <p>
+              Elite Fitness - Phòng tập cao cấp với tiêu chuẩn 5 sao, mang đến
+              cho bạn trải nghiệm tập luyện tốt nhất.
+            </p>
+            <div class="footer-social">
+              <a href="https://www.facebook.com/thienvo123456"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h3>Liên kết nhanh</h3>
+            <ul>
+              <li><a href="#home">Trang chủ</a></li>
+              <li><a href="#about">Giới thiệu</a></li>
+              <li><a href="#classes">Lớp học</a></li>
+              <li><a href="#trainers">Huấn luyện viên</a></li>
+              <li><a href="#pricing">Gói tập</a></li>
+              <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h3>Lớp học</h3>
+            <ul>
+              <li><a href="#">Yoga & Pilates</a></li>
+              <li><a href="#">Cardio & HIIT</a></li>
+              <li><a href="#">CrossFit</a></li>
+              <li><a href="#">Zumba</a></li>
+              <li><a href="#">Personal Training</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-newsletter">
+            <h3>Đăng ký nhận tin</h3>
+            <p>Nhận ưu đãi và thông tin mới nhất từ chúng tôi</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Email của bạn" required />
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; 2023 Elite Fitness. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init({
-        disable: "mobile",
-      });
+      AOS.init();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script src="./js/main.js"></script>

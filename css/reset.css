@@ -6,8 +6,6 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-behavior: auto !important;
-  scroll-snap-type: none !important;
 }
 
 body {
@@ -30,8 +28,4 @@ ul {
 img {
   max-width: 100%;
   height: auto;
-}
-
-section {
-  min-height: auto !important;
 }
