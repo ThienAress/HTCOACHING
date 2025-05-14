@@ -426,14 +426,15 @@
   background-color: #262626;
 }
 
-.section-title {
+.pricing .section-title {
   color: #ff3c3c;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.section-subtitle {
+.pricing .section-subtitle {
+  padding-top: 0;
   margin-bottom: 40px;
 }
 
