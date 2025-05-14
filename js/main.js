@@ -1,24 +1,3 @@
-// Smooth Scroll for Navigation
-// const btn = document.getElementById("scrollToTopBtn");
-
-// window.addEventListener("scroll", () => {
-//   const scrollTop =
-//     document.documentElement.scrollTop || document.body.scrollTop;
-//   const windowHeight = window.innerHeight;
-//   const scrollHeight = document.documentElement.scrollHeight;
-//   const distanceToBottom = scrollHeight - (scrollTop + windowHeight);
-
-//   if (distanceToBottom < 300) {
-//     btn.classList.add("show");
-//   } else {
-//     btn.classList.remove("show");
-//   }
-// });
-
-// btn.addEventListener("click", () => {
-//   window.scrollTo({ top: 0, behavior: "smooth" });
-// });
-
 /**
  * Hàm tạo hiệu ứng đếm số từ 0 đến giá trị đích
  */
@@ -92,4 +71,31 @@ document.querySelectorAll(".navbar a").forEach((link) => {
     navbar.classList.remove("active");
   });
 });
-// Menu Toggle
+
+// Đóng menu khi cuộn chuột (scroll)
+window.addEventListener("scroll", () => {
+  if (navbar.classList.contains("active")) {
+    navbar.classList.remove("active");
+  }
+});
+
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+const footer = document.getElementById("site-footer");
+
+window.addEventListener("scroll", () => {
+  const footerOffset = footer.offsetTop;
+  const scrollPosition = window.scrollY + window.innerHeight;
+
+  if (scrollPosition >= footerOffset - 150) {
+    scrollToTopBtn.classList.add("show");
+  } else {
+    scrollToTopBtn.classList.remove("show");
+  }
+});
+
+scrollToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});

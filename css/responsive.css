@@ -47,7 +47,7 @@
   .navbar {
     display: none;
     position: fixed;
-    top: 85px; /* Chiều cao header */
+    top: 97px; /* Chiều cao header */
     left: 0;
     width: 100%;
     background-color: #414345;
