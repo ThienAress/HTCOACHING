@@ -1,6 +1,3 @@
-/**
- * Hàm tạo hiệu ứng đếm số từ 0 đến giá trị đích
- */
 function animateStats() {
   // Lấy tất cả các phần tử số cần đếm
   const statElements = document.querySelectorAll(".stat-number");
@@ -81,28 +78,41 @@ window.addEventListener("scroll", () => {
 
 document.addEventListener("DOMContentLoaded", function () {
   const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-  const footer = document.getElementById("site-footer");
+  const footer = document.querySelector("footer"); // Chọn phần footer của bạn
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          scrollToTopBtn.style.display = "block";
-        } else {
-          scrollToTopBtn.style.display = "none";
-        }
-      });
-    },
-    {
-      threshold: 0.1,
+  // Kiểm tra vị trí footer để hiển thị nút
+  function checkScroll() {
+    // Vị trí hiện tại của scroll
+    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+    // Chiều cao của toàn bộ trang
+    const pageHeight = document.documentElement.scrollHeight;
+
+    // Chiều cao của viewport
+    const viewportHeight = window.innerHeight;
+
+    // Vị trí bắt đầu của footer (tính từ top)
+    const footerPosition = footer.offsetTop;
+
+    // Hiển thị nút khi scroll xuống gần footer (cách footer 300px)
+    if (scrollPosition + viewportHeight >= footerPosition - 300) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
     }
-  );
-
-  if (footer) {
-    observer.observe(footer);
   }
 
+  // Sự kiện click cho nút scroll to top
   scrollToTopBtn.addEventListener("click", function () {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   });
+
+  // Theo dõi sự kiện scroll
+  window.addEventListener("scroll", checkScroll);
+
+  // Kiểm tra ngay khi load trang
+  checkScroll();
 });
