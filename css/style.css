@@ -105,6 +105,10 @@
   height: 50px;
 }
 
+.navbar {
+  transition: all 0.3s ease;
+}
+
 .navbar ul {
   display: flex;
 }

@@ -83,14 +83,12 @@ const toggleBtn = document.getElementById("menu-toggle");
 const navbar = document.getElementById("navbar");
 
 toggleBtn.addEventListener("click", () => {
-  toggleBtn.classList.toggle("active");
   navbar.classList.toggle("active");
 });
 
-// Auto close menu when clicking any link
+// Đóng menu khi click vào link
 document.querySelectorAll(".navbar a").forEach((link) => {
   link.addEventListener("click", () => {
-    toggleBtn.classList.remove("active");
     navbar.classList.remove("active");
   });
 });
