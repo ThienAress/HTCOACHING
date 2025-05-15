@@ -151,25 +151,36 @@ function setFullHeight() {
 window.addEventListener("resize", setFullHeight);
 window.addEventListener("load", setFullHeight);
 
-window.addEventListener("load", function () {
-  new Swiper(".about-image-swiper", {
+document.addEventListener("DOMContentLoaded", function () {
+  const aboutSwiper = new Swiper(".about-image-swiper", {
     loop: true,
     autoplay: {
       delay: 1000,
       disableOnInteraction: false,
     },
-    effect: "slide", // giữ nguyên slide
-    speed: 1000,
+    effect: "slide",
+    speed: 800,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
-    on: {
-      slideChange: function () {
-        if (typeof AOS !== "undefined") {
-          AOS.refresh();
-        }
+    // Thêm breakpoints cho mobile
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 0,
       },
     },
+  });
+
+  // Refresh AOS khi slide thay đổi
+  aboutSwiper.on("slideChange", function () {
+    if (typeof AOS !== "undefined") {
+      AOS.refresh();
+    }
   });
 });

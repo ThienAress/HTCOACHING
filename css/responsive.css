@@ -21,9 +21,13 @@
     text-align: center;
   }
 
+  .about-content,
+  .about-image {
+    flex: 1 1 100%;
+  }
+
   .about-stats {
-    flex-direction: row;
-    gap: 20px;
+    justify-content: center;
   }
 
   /* Price section */
@@ -127,10 +131,42 @@
     flex-direction: column;
     gap: 15px;
   }
+  .swiper-button-next,
+  .swiper-button-prev {
+    visibility: hidden;
+  }
 
   /* About section */
   .about .section-title {
     font-size: 2rem;
+  }
+
+  .about {
+    padding: 60px 20px;
+  }
+
+  .about-image {
+    height: 300px !important; /* Quan trọng: Set chiều cao cố định */
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .about-image-swiper {
+    height: 100%;
+  }
+
+  /* Đảm bảo ảnh cover toàn bộ slide */
+  .swiper-slide img {
+    min-height: 100%;
+    object-position: center;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .stat-text {
+    font-size: 0.9rem;
   }
 
   /* Classes section */
@@ -245,6 +281,15 @@
 
   .hero p {
     font-size: 0.95rem;
+  }
+
+  /* About section */
+  .stat-number {
+    font-size: 1.5rem;
+  }
+
+  .stat-text {
+    font-size: 0.8rem;
   }
 
   /* Price section */
