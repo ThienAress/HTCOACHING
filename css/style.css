@@ -303,8 +303,9 @@
 }
 
 .about-image {
-  flex: 1;
+  flex: 2;
   border-radius: 10px;
+  height: 500px;
   overflow: hidden;
   box-shadow: var(--box-shadow);
 }
@@ -313,6 +314,40 @@
   width: 100%;
   height: auto;
   display: block;
+}
+
+.about-image-swiper {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.about-image-swiper .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+.about-image-swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Quan trọng: Ảnh sẽ cover toàn bộ slide */
+  display: block;
+}
+.about-image-swiper .swiper-pagination {
+  position: absolute;
+  bottom: 20px !important;
+}
+.about-image-swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: white;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+.about-image-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #a8ff78; /* Màu chủ đạo */
+  transform: scale(1.2);
 }
 
 .about-stats {

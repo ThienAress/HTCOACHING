@@ -125,9 +125,6 @@ document.addEventListener("DOMContentLoaded", function () {
       disableOnInteraction: false,
     },
     effect: "slide",
-    fadeEffect: {
-      crossFade: true,
-    },
     speed: 1000, // tăng lên để mượt hơn
 
     pagination: {
@@ -153,3 +150,26 @@ function setFullHeight() {
 }
 window.addEventListener("resize", setFullHeight);
 window.addEventListener("load", setFullHeight);
+
+window.addEventListener("load", function () {
+  new Swiper(".about-image-swiper", {
+    loop: true,
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false,
+    },
+    effect: "slide", // giữ nguyên slide
+    speed: 1000,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    on: {
+      slideChange: function () {
+        if (typeof AOS !== "undefined") {
+          AOS.refresh();
+        }
+      },
+    },
+  });
+});

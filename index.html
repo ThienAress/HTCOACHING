@@ -305,14 +305,27 @@
             </div>
           </div>
         </div>
+
+        <!-- Phần about-image đã sửa -->
         <div class="about-image">
-          <img
-            src="./assets/images/hero.jpg"
-            alt="Về chúng tôi"
-            data-aos="flip-down"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-          />
+          <div class="swiper about-image-swiper">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 - Sửa đường dẫn ảnh -->
+              <div class="swiper-slide">
+                <img src="./assets/images/hero.jpg" alt="Phòng tập" />
+              </div>
+              <!-- Slide 2 -->
+              <div class="swiper-slide">
+                <img src="/assets/images/hero3.jpg" alt="HLV" />
+              </div>
+              <!-- Slide 3 -->
+              <div class="swiper-slide">
+                <img src="./assets/images/hero2.jpg" alt="Thiết bị" />
+              </div>
+            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </div>
     </section>
