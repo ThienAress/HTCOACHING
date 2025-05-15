@@ -102,7 +102,6 @@
 
   /* Hero section */
   .hero {
-    padding: 120px 20px 40px;
     height: auto;
   }
 
@@ -113,6 +112,20 @@
 
   .hero h1 {
     font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
   }
 
   /* About section */
@@ -225,6 +238,15 @@
 }
 
 @media (max-width: 480px) {
+  /* Hero section */
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
   /* Price section */
   .pricing-grid {
     gap: 20px;
@@ -319,5 +341,14 @@
   .nav-cta .btn {
     padding: 8px 16px;
     font-size: 0.85rem;
+  }
+}
+
+@keyframes animate-gradient {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
   }
 }

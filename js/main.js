@@ -116,3 +116,40 @@ document.addEventListener("DOMContentLoaded", function () {
   // Kiểm tra ngay khi load trang
   checkScroll();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const heroSwiper = new Swiper(".hero-swiper", {
+    loop: true,
+    autoplay: {
+      delay: 5000, // tăng delay để người dùng có thời gian đọc
+      disableOnInteraction: false,
+    },
+    effect: "slide",
+    fadeEffect: {
+      crossFade: true,
+    },
+    speed: 1000, // tăng lên để mượt hơn
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  // Optional: cải thiện AOS
+  AOS.init({
+    once: true,
+    duration: 1000,
+  });
+});
+
+function setFullHeight() {
+  const vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+}
+window.addEventListener("resize", setFullHeight);
+window.addEventListener("load", setFullHeight);
