@@ -137,18 +137,16 @@
   }
 
   /* About section */
+  .about .container {
+    flex-direction: column;
+  }
+
   .about .section-title {
     font-size: 2rem;
   }
 
-  .about {
-    padding: 60px 20px;
-  }
-
   .about-image {
-    height: 300px !important; /* Quan trọng: Set chiều cao cố định */
-    width: 100%;
-    margin-top: 30px;
+    aspect-ratio: 4 / 3; /* Tỷ lệ ảnh dọc hơn một chút cho mobile */
   }
 
   .about-image-swiper {
@@ -159,6 +157,10 @@
   .swiper-slide img {
     min-height: 100%;
     object-position: center;
+  }
+
+  .stat-item {
+    flex: 1 1 30%;
   }
 
   .stat-number {
