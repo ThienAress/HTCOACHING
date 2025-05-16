@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const aboutSwiper = new Swiper(".about-image-swiper", {
     loop: true,
     autoplay: {
-      delay: 1000,
+      delay: 4000,
       disableOnInteraction: false,
     },
     effect: "slide",

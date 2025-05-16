@@ -364,7 +364,6 @@
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
-  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -382,6 +381,15 @@
 .stat-text {
   font-size: 0.9rem;
   color: var(--gray-color);
+}
+
+.about-content,
+.about-stats,
+.stat-number,
+.stat-text,
+.about-image,
+.swiper-slide img {
+  will-change: transform, opacity;
 }
 /* Classes Section */
 .classes {
